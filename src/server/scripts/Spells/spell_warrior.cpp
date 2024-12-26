@@ -1570,30 +1570,30 @@ public:
 };
 
 //214871 - Odyn's fury
-class spell_warr_odyns_fury : public SpellScriptLoader
-{
-public:
-    spell_warr_odyns_fury() : SpellScriptLoader("spell_warr_odyns_fury") { }
+//class spell_warr_odyns_fury : public SpellScriptLoader
+//{
+//public:
+    //spell_warr_odyns_fury() : SpellScriptLoader("spell_warr_odyns_fury") { }
 
-    class spell_warr_odyns_fury_AuraScript : public AuraScript
-    {
+    //class spell_warr_odyns_fury_AuraScript : public AuraScript
+    //{
 
-        void Absorb(AuraEffect* /* aurEff */, DamageInfo& /*dmgInfo*/, uint32& absorbAmount)
-        {
-            absorbAmount = 0;
-        }
+        //void Absorb(AuraEffect* /* aurEff */, DamageInfo& /*dmgInfo*/, uint32& absorbAmount)
+        //{
+           // absorbAmount = 0;
+        //}
 
-        void Register() override
-        {
-            OnEffectAbsorb += AuraEffectAbsorbFn(spell_warr_odyns_fury_AuraScript::Absorb, EFFECT_0, SPELL_AURA_DUMMY);
-        }
-    };
+        //void Register() override
+        //{
+            //OnEffectAbsorb += AuraEffectAbsorbFn(spell_warr_odyns_fury_AuraScript::Absorb, EFFECT_0, SPELL_AURA_DUMMY);
+        //}
+    //};
 
-    AuraScript* GetAuraScript() const override
-    {
-        return new spell_warr_odyns_fury_AuraScript();
-    }
-};
+    //AuraScript* GetAuraScript() const override
+    //{
+        //return new spell_warr_odyns_fury_AuraScript();
+    //}
+//};
 
 //Second wind - 29838
 class spell_warr_second_wind_proc : public AuraScript
