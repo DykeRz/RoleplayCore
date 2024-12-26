@@ -1787,7 +1787,7 @@ void AddSC_warrior_spell_scripts()
     new spell_warr_enrage();
     RegisterSpellScript(spell_warr_enrage_aura);
     new spell_warr_frothing_berserker();
-    new spell_warr_odyns_fury();
+    //new spell_warr_odyns_fury();
     new spell_warr_second_wind_damaged();
     new spell_warr_second_wind_proc();
     new anger_management();
